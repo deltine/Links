@@ -18,7 +18,7 @@
     <link href="./carousel.css" rel="stylesheet">
 
     <link href="./font-awesome.min.css" rel="stylesheet">
-
+    <!--
     <script src="./jquery-2.2.0.min.js" crossorigin="anonymous"
         integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
         </script>
@@ -28,6 +28,7 @@
         </script>
     <script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal || document.write("\u003Cscript src=\u0022\/lib\/bootstrap\/dist\/js\/bootstrap.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa\u0022\u003E\u003C\/script\u003E"));</script>
     <script src="./site.min.js"></script>
+    -->
 
 </head>
 
@@ -40,8 +41,26 @@
 
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-
+                <ul class="nav navbar-nav navbar-right" style="padding-top: 15px;">
+                    <li>
+                        <label for="translationLanguage">translation</label>
+                        <select id="translationLanguage">
+                            <option value="ja">Japanese</option>
+                            <option value="th">Thai</option>
+                            <option value="fr">French</option>
+                            <option value="zh-TW">Traditional</option>
+                            <option value="zh-CN">Chinese</option>
+                            <option value="ko">Korea</option>
+                            <option value="id">Indonesian</option>
+                        </select>
+                    </li>
+                    <script>
+                        let tlSelect = document.getElementById('translationLanguage');
+                        function valueChange() {
+                            location.href = "https://translate.google.com/translate?sl=en&tl=" + tlSelect.value + "&u=https://hiromu-links.github.io/Links/Privacy.html";
+                        }
+                        tlSelect.addEventListener('change', valueChange);
+                    </script>
                 </ul>
             </div>
         </div>
@@ -326,15 +345,13 @@
                         actions
                         of a third party such as unauthorized access to this service or intrusion of a computer virus.
                         <br> Our team is not responsible for any damages to users or third parties caused in connection
-                        with this service. In addition, Our team will not return or refund the money you paid once for
-                        your
-                        convenience.
+                        with this service. In addition, Our team will never refund your money once you have paid for it
+                        for your convenience.
                         <br> Our team is not responsible for any troubles, promises, guarantees, etc. between the
                         advertiser and the user of the advertisement carried out on this service, and any loss or damage
-                        caused to the user as a result. ..
+                        caused to the user as a result.
                         <br> Our team does not guarantee the legality, consistency, safety, accuracy, public order and
                         morals, etc. of any third-party website that can be transitioned by linking from this service.
-                        ..
                         <br> Our team is not obliged to respond to all of these inquiries, opinions such as
                         improvements,
                         other suggestions, feedback, etc. from users regarding this service, or to take any action, and

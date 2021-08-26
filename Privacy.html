@@ -19,6 +19,7 @@
 
     <link href="./font-awesome.min.css" rel="stylesheet">
 
+    <!--
     <script src="./jquery-2.2.0.min.js" crossorigin="anonymous"
         integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
         </script>
@@ -28,6 +29,7 @@
         </script>
     <script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal || document.write("\u003Cscript src=\u0022\/lib\/bootstrap\/dist\/js\/bootstrap.min.js\u0022 crossorigin=\u0022anonymous\u0022 integrity=\u0022sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa\u0022\u003E\u003C\/script\u003E"));</script>
     <script src="./site.min.js"></script>
+    -->
 </head>
 
 <body>
@@ -38,8 +40,26 @@
                 <font size="6" color="#fffff" translate="no">Links.</font>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-
+                <ul class="nav navbar-nav navbar-right" style="padding-top: 15px;">
+                    <li>
+                        <label for="translationLanguage">translation</label>
+                        <select id="translationLanguage">
+                            <option value="ja">Japanese</option>
+                            <option value="th">Thai</option>
+                            <option value="fr">French</option>
+                            <option value="zh-TW">Traditional</option>
+                            <option value="zh-CN">Chinese</option>
+                            <option value="ko">Korea</option>
+                            <option value="id">Indonesian</option>
+                        </select>
+                    </li>
+                    <script>
+                        let tlSelect = document.getElementById('translationLanguage');
+                        function valueChange() {
+                            location.href = "https://translate.google.com/translate?sl=en&tl=" + tlSelect.value + "&u=https://hiromu-links.github.io/Links/Privacy.html";
+                        }
+                        tlSelect.addEventListener('change', valueChange);
+                    </script>
                 </ul>
             </div>
         </div>
@@ -55,7 +75,8 @@
                     <h4>1.Overview</h4>
                     <p class="well">
                         <font translate="no">Links.</font> (hereinafter referred to as "our team, we, us") has
-                        established the following personal information protection policy to promote the protection of
+                        established the following personal information protection policy to promote the protection
+                        of
                         personal information.
                         <br />
                         We will establish a system for the protection of personal information and ensure that all
@@ -64,12 +85,15 @@
 
                     <h4>2.The information we collect</h4>
                     <p class="well">
-                        We receive some information automatically when you use our Apps. This includes data about your
-                        device, software, operating system, the language you've set for your Device, advertising IDs for
+                        We receive some information automatically when you use our Apps. This includes data about
+                        your
+                        device, software, operating system, the language you've set for your Device, advertising IDs
+                        for
                         advertisement tracking ("Advertising IDs") and your IP address.
                         <br />
                         In order to try to improve your experience with our games, occasionally we can collect
-                        information about how you interact with content and advertisements throughout the application.
+                        information about how you interact with content and advertisements throughout the
+                        application.
                         <br />
                         Our team does not collect any personally identifiable information about you or your children
                         through our apps. In other words, we do not collect information such as your name, address,
@@ -85,87 +109,118 @@
                         <br>
                         Our team's website and mobile applications are compliant with the Children's Online Privacy
                         Protection Act ("COPPA").
-                        If we learn through a support request or feedback that a user is a child under the age of 13, we
-                        will not collect, store, or use such user's personal information and will delete it in a secure
+                        If we learn through a support request or feedback that a user is a child under the age of
+                        13, we
+                        will not collect, store, or use such user's personal information and will delete it in a
+                        secure
                         manner.
                         <br>
-                        We take care of filtering categories of sensitive and unsuitable ads for children. But rarely
+                        We take care of filtering categories of sensitive and unsuitable ads for children. But
+                        rarely
                         can an advertiser misclassify your ads, and this situation is beyond our reach.
                     </p>
 
                     <h4>4.Your rights as an EEA resident</h4>
                     <p class="well">
-                        GDPR grants EEA residents certain privacy rights regarding the personal information we collect.
-                        You have the following rights in addition to your rights to know, correct, update, or request
+                        GDPR grants EEA residents certain privacy rights regarding the personal information we
+                        collect.
+                        You have the following rights in addition to your rights to know, correct, update, or
+                        request
                         the deletion of your personal information.
                         <br>
                         <br>(1)Right to Object
                         <br>
-                        If the processing of your personal data is based on legitimate interests, you have the right to
-                        object to our processing. If you object, we will no longer process your personal data unless we
-                        have compelling general legitimate grounds for the processing, as described in Article 21 of the
-                        GDPR. In particular, if the information is necessary for the establishment, exercise, or defense
-                        of a legal claim. You also have the right to lodge a complaint with the supervisory authority.
+                        If the processing of your personal data is based on legitimate interests, you have the right
+                        to
+                        object to our processing. If you object, we will no longer process your personal data unless
+                        we
+                        have compelling general legitimate grounds for the processing, as described in Article 21 of
+                        the
+                        GDPR. In particular, if the information is necessary for the establishment, exercise, or
+                        defense
+                        of a legal claim. You also have the right to lodge a complaint with the supervisory
+                        authority.
                         <br>
                         <br>(2) Right to Restrict Processing
                         <br>
-                        You have the right to restrict the processing of your personal information under the conditions
+                        You have the right to restrict the processing of your personal information under the
+                        conditions
                         set out in Article 18 of the GDPR.
                         <br>
                         <br>(3) Right to Personal information Portability
                         <br>
                         You have the right to receive your personal information in a structured, commonly used and
-                        machine-readable format and have the right to transmit those information to another controller
+                        machine-readable format and have the right to transmit those information to another
+                        controller
                         under the conditions set out in Article 20 of the GDPR.
                     </p>
 
                     <h4>5.Your rights as a California resident</h4>
                     <p class="well">
-                        The California Consumer Privacy Act (“CCPA”) grants California residents certain privacy rights
+                        The California Consumer Privacy Act (“CCPA”) grants California residents certain privacy
+                        rights
                         regarding personal information we collect. You have the following rights in addition to your
                         rights to know, correct, update, or request the deletion of your personal information.
                         <br>
                         <br>(1) Right to Know About Personal Information Collected, Disclosed, or Sold
                         <br>
-                        You have the right to access the personal information that we have about you. You have the right
-                        to access the personal information we hold about you, including: (i) information about whether
-                        your personal information has been collected, used, disclosed, or sold; (ii) the categories of
-                        your personal information collected in the past 12 months; (iii) the categories of sources from
-                        which your personal information was collected; (iv) the business or commercial purpose for which
-                        your personal information was collected or sold (if applicable); and (v) disclosures about the
-                        sale of your personal information (if applicable). (iii) the category of source from which your
+                        You have the right to access the personal information that we have about you. You have the
+                        right
+                        to access the personal information we hold about you, including: (i) information about
+                        whether
+                        your personal information has been collected, used, disclosed, or sold; (ii) the categories
+                        of
+                        your personal information collected in the past 12 months; (iii) the categories of sources
+                        from
+                        which your personal information was collected; (iv) the business or commercial purpose for
+                        which
+                        your personal information was collected or sold (if applicable); and (v) disclosures about
+                        the
+                        sale of your personal information (if applicable). (iii) the category of source from which
+                        your
                         personal information was collected; (iv) the business or commercial purpose for which your
-                        personal information was collected or sold (if applicable); and (v) the disclosure of the sale
+                        personal information was collected or sold (if applicable); and (v) the disclosure of the
+                        sale
                         of your personal information (if applicable), without charge. categories of your personal
-                        information disclosed or sold to third parties in the past 12 months, the categories of third
-                        parties to which your personal information was disclosed or sold (if any), and if you are under
+                        information disclosed or sold to third parties in the past 12 months, the categories of
+                        third
+                        parties to which your personal information was disclosed or sold (if any), and if you are
+                        under
                         16 years of age, a statement as to whether we have actual knowledge that we are selling your
-                        personal information. You also have the right to request our team to provide you with a copy of
+                        personal information. You also have the right to request our team to provide you with a copy
+                        of
                         your personal information while it is being processed, provided that you submit a verifiable
                         request in the form of an email to contact.team.links@gmail.com.
                         <br>
                         <br>(2) Right to Opt-Out of the Sale of Personal Information (if any)
                         <br>
-                        You have the right to opt out of the sale of your personal information (if any) and, except as
-                        otherwise provided in the CCPA, to request that our team make a statement as to whether or not
+                        You have the right to opt out of the sale of your personal information (if any) and, except
+                        as
+                        otherwise provided in the CCPA, to request that our team make a statement as to whether or
+                        not
                         your personal information will be sold and provide an opt-out mechanism or link to it.
                         <br>
                         <br>(3) Right to Non-Discrimination for the Exercise of a Consumer’s Privacy Rights
                         <br>
                         You have the right not to be discriminated against by our team with respect to the privacy
                         rights granted to you by the CCPA. This means that no financial incentive, price, or service
-                        differential will be provided for exercising your rights under the CCPA unless such differential
-                        is reasonably related to the value of your personal information. Notwithstanding the foregoing,
+                        differential will be provided for exercising your rights under the CCPA unless such
+                        differential
+                        is reasonably related to the value of your personal information. Notwithstanding the
+                        foregoing,
                         the Team reserves the right to deny your request to know, request to delete, or request to
                         opt-out for any reason permitted by the CCPA or its regulations, and such denial will not be
                         considered discriminatory.
                         <br>
                         <br>(4) Right to Authorize an Agent to Make a Request on Your Behalf
                         <br>
-                        You have the right under the CCPA to authorize an agent to make a request to know, remove, or
-                        opt-out. If you use an authorized agent to submit any of the above requests, you may be required
+                        You have the right under the CCPA to authorize an agent to make a request to know, remove,
+                        or
+                        opt-out. If you use an authorized agent to submit any of the above requests, you may be
+                        required
                         to provide the agent with signed permission to authorize the agent for identity verification
-                        purposes and formal authorization by the agent to submit this request. If you fail to provide
+                        purposes and formal authorization by the agent to submit this request. If you fail to
+                        provide
                         any of the requested materials, our team reserves the right to deny such request in order to
                         protect the user's information and information security.
                     </p>
@@ -177,9 +232,12 @@
                         abuse and improve the application.
                         <br><br>
                         We may share the information collected only under these circumstances:
-                        <br>・If we believe it's reasonably necessary to comply with a law, regulation or legal process.
-                        <br>・Third parties who provide specific technical tools and analytical services to third parties
-                        that help our team deliver and improve our services, understand how people use our games, and
+                        <br>・If we believe it's reasonably necessary to comply with a law, regulation or legal
+                        process.
+                        <br>・Third parties who provide specific technical tools and analytical services to third
+                        parties
+                        that help our team deliver and improve our services, understand how people use our games,
+                        and
                         help us make our games better.
                         <br>・If we sell, transfer or otherwise share some or all of our assets, including the
                         information identified in this privacy policy, in connection with a merger, acquisition,
@@ -193,8 +251,10 @@
                     <p class="well">
                         Advertising companies may use and collect anonymous data about your interests in order to
                         customize content and advertising here and on other sites and applications. Interest and
-                        location data may be linked to your device, but not to your identity. Our team's games may share
-                        your advertising ID with our advertising partners in an anonymous manner that is not associated
+                        location data may be linked to your device, but not to your identity. Our team's games may
+                        share
+                        your advertising ID with our advertising partners in an anonymous manner that is not
+                        associated
                         with your name or email address.
                         <br><br>
                         You can opt out by discontinuing your use our Games.
@@ -202,14 +262,16 @@
 
                     <h4>8.Retention period of information</h4>
                     <p class="well">
-                        The length of time we retain the information we collect depends on the purpose for which it was
+                        The length of time we retain the information we collect depends on the purpose for which it
+                        was
                         originally collected. Our team will not retain information longer than is necessary for our
                         business or legal requirements.
                     </p>
 
                     <h4>9.Support</h4>
                     <p class="well">
-                        Users of our team may send us an email if they need help or support with our products. When you
+                        Users of our team may send us an email if they need help or support with our products. When
+                        you
                         submit a support request, you will receive an email address and any other personal and
                         non-personal information you provide in connection with your support request ("Support
                         Information"). Only the Support Information will be used.
@@ -217,7 +279,8 @@
 
                     <h4>10.Contact Us</h4>
                     <p class="well">
-                        We welcome your questions, comments, and suggestions regarding this Privacy Policy. If you have
+                        We welcome your questions, comments, and suggestions regarding this Privacy Policy. If you
+                        have
                         any comments or suggestions, please contact us at the following address.
                         <br>
                         <font translate="no">Links.</font>
@@ -227,7 +290,8 @@
                     <h4>11.Changes to this Privacy Policy</h4>
                     <p class="well">
                         Our team reserves the right to change this Privacy Policy from time to time. Our use of the
-                        information we collect is governed by the Privacy Policy in effect at the time the information
+                        information we collect is governed by the Privacy Policy in effect at the time the
+                        information
                         was collected. Therefore, we encourage you to periodically review this Privacy Policy to be
                         aware of any changes.
                     </p>
@@ -236,8 +300,10 @@
                     <p class="well">
                         Our team will make the following matters regarding personal information available to the
                         individual concerned, or respond to the individual's request without delay.
-                        <br>1)Purposes of use of personal information (However, this excludes information for which the
-                        Act on the Protection of Personal Information stipulates that there is no obligation to do so.
+                        <br>1)Purposes of use of personal information (However, this excludes information for which
+                        the
+                        Act on the Protection of Personal Information stipulates that there is no obligation to do
+                        so.
                         If we decide not to respond to you, we will notify you to that effect without delay).
                         <br>2)Contact for inquiries about personal information
                     </p>
